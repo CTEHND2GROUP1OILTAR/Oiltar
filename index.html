@@ -5,7 +5,41 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width-device-width">
 	<title>OILTAR SERVICES</title>
-	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+<!--Javascript-->
+	<script>
+  var test = document.getElementById("branding");
+  
+  
+  // this handler will be executed only once when the cursor moves over the unordered list
+  test.addEventListener("mouseenter", function( event ) {   
+    // highlight the mouseenter target
+    event.target.style.color = "purple";
+
+    // reset the color after a short delay
+    setTimeout(function() {
+      event.target.style.color = "";
+    }, 500);
+  }, false);
+  
+  
+  // this handler will be executed every time the cursor is moved over a different list item
+  test.addEventListener("mouseover", function( event ) {   
+    // highlight the mouseover target
+    event.target.style.color = "orange";
+
+    // reset the color after a short delay
+    setTimeout(function() {
+      event.target.style.color = "";
+    }, 500);
+  }, false);
+</script>
+
+
+
+
 </head>
 <body>
 	<header>
@@ -83,5 +117,8 @@
 	<footer>
 		<p>Oiltar Services Corporation &copy 2018</p>
 	</footer>
+
+	<!--Your site is ready to be published at https://ctehnd2group1oiltar.github.io/Oiltar/.-->
+
 </body>
 </html>
